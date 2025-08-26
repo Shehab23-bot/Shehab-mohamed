@@ -1,60 +1,136 @@
-<DOCTYPE html>
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shehab Mohamed - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shehab Mohamed — Portfolio</title>
+  <meta name="description" content="Shehab Mohamed — Web Designer & Video Editor. Modern, fast, and responsive portfolio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Shehab Mohamed</h1>
-        <p>Web Designer & Editor</p>
-        <a href="#contact" class="btn">Hire Me</a>
-        <a href="cv.pdf" class="btn" download>Download CV</a>
-    </header>
+  <header class="nav">
+    <a class="logo" href="#hero">SM</a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+  </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a self-taught web designer with experience in HTML, CSS, and basic JavaScript.
-        I create and edit websites for small businesses and individuals. I am available for freelance and remote work.</p>
-    </section>
+  <section id="hero" class="hero">
+    <div class="blob" aria-hidden="true"></div>
+    <div class="container">
+      <p class="eyebrow reveal">Hello, I’m</p>
+      <h1 class="reveal">Shehab Mohamed</h1>
+      <h2 class="typing reveal">
+        <span id="typed"></span>
+        <span class="cursor">|</span>
+      </h2>
+      <p class="sub reveal">Web Designer & Video Editor — I create clean, modern websites and edit engaging videos. Bilingual: English & Arabic.</p>
+      <div class="cta reveal">
+        <a class="btn primary" href="mailto:your-email@example.com?subject=Hire%20Shehab">Hire me</a>
+        <a class="btn ghost" href="cv.pdf" download>Download CV</a>
+      </div>
+      <div class="social reveal">
+        <a href="#" title="GitHub">💻</a>
+        <a href="#" title="LinkedIn">🔗</a>
+        <a href="mailto:shehabmoh3mmed456@gmail.com " title="Email">✉️</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="services">
-        <h2>Services</h2>
-        <div class="services">
-            <div class="service">
-                <h3>Web Design</h3>
-                <p>Modern, responsive landing pages and portfolios.</p>
-            </div>
-            <div class="service">
-                <h3>Website Editing</h3>
-                <p>Updates, improvements, and customizations for existing websites.</p>
-            </div>
-        </div>
-    </section>
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <div class="card reveal">
+        <h3>About Me</h3>
+        <p>
+          I’m a self-taught web designer with hands-on HTML experience and a strong eye for clean layouts, motion, and performance.
+          I design and edit to make brands look modern and professional.
+        </p>
+        <ul class="tags">
+          <li>#HTML</li><li>#Responsive</li><li>#Animations</li><li>#VideoEditing</li>
+        </ul>
+      </div>
+      <div class="card reveal">
+        <h3>What you get</h3>
+        <ul class="list">
+          <li>Fast, mobile-first websites</li>
+          <li>Modern micro-interactions</li>
+          <li>Video trims, color, captions</li>
+          <li>2 languages: EN / AR</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
+  <section id="services" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Services</h2>
+      <div class="cards">
+        <article class="service card reveal">
+          <h3>Web Design</h3>
+          <p>Modern landing pages and portfolios using semantic HTML, accessible and responsive.</p>
+        </article>
+        <article class="service card reveal">
+          <h3>Video Editing</h3>
+          <p>Snappy edits for social, subtitles, simple color, motion graphics basics.</p>
+        </article>
+        <article class="service card reveal">
+          <h3>Content Updates</h3>
+          <p>Quick fixes, text/image swaps, speed and SEO basics for existing sites.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Recent Work</h2>
+      <div class="projects">
+        <a class="project reveal" href="#" target="_blank" rel="noreferrer">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" alt="Project 1" />
+          <div class="overlay"><span>Portfolio Landing</span></div>
+        </a>
+        <a class="project reveal" href="#" target="_blank" rel="noreferrer">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" alt="Project 2" />
+          <div class="overlay"><span>Product Page</span></div>
+        </a>
+        <a class="project reveal" href="#" target="_blank" rel="noreferrer">
+          <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" alt="Project 3" />
+          <div class="overlay"><span>Promo Video</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container grid-2">
+      <div class="card reveal">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:shehabmoh3mmed456@gmail.com ">shehabmoh3mmed456@gmail.com </a></p>
-        <p>GitHub: <a href="https://github.com/shehabmohamed">shehabmohamed</a></p>
-    </section>
+        <p>Ready to talk? Email me or ping me on WhatsApp.</p>
+        <p><strong>Email:</strong> <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p><strong>WhatsApp:</strong> <a href="https://wa.me/0000000000" target="_blank">+0000000000</a></p>
+      </div>
+      <form class="card reveal" action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <label>Name<input required name="name" placeholder="Your name" /></label>
+        <label>Email<input required type="email" name="email" placeholder="you@example.com" /></label>
+        <label>Message<textarea required name="message" rows="4" placeholder="How can I help?"></textarea></label>
+        <button class="btn primary" type="submit">Send</button>
+      </form>
+    </div>
+  </section>
 
-    <footer>
-        &copy; 2025 Shehab Mohamed. All rights reserved.
-    </footer>
-    <script src="script.js"></script>
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Shehab Mohamed. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
-</html>in HTML, CSS, and basic JavaScript.
-        I create and edit websites for small businesses and individuals. I am available for freelance and remote work.</p>
-    </section>
-
-    <section id="services">
-        <h2>Services</h2>
-        <div class="services">
-            <div class="service">
-                <h3>Web Design</h3>
-                <p>Modern, responsive landing pages and portfolios.</p>
-            </div>
-            <div
+</html>
