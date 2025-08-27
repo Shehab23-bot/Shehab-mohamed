@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shehab Mohammed — Frontend Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="brand">
+        <div class="logo"></div>
+        <span id="brand-name">Shehab Mohammed</span>
+      </div>
+      <nav class="links">
+        <a href="#about" data-key="about-link"></a>
+        <a href="#skills" data-key="skills-link"></a>
+        <a href="#projects" data-key="projects-link"></a>
+        <a href="#services" data-key="services-link"></a>
+        <a href="#contact" class="btn primary" data-key="contact-link"></a>
+        <button id="lang-toggle">AR</button>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid fade-in">
+      <div>
+        <span class="chip" data-key="hero-chip"></span>
+        <h1>
+          <span data-key="hero-title"></span>
+          <br>
+          <span id="typing"></span>
+        </h1>
+        <p class="sub" data-key="hero-desc"></p>
+        <div class="cta">
+          <a class="btn primary" href="https://github.com/ShehabMohammed" target="_blank" data-key="btn-github"></a>
+          <a class="btn" href="#projects" data-key="btn-projects"></a>
+          <a class="btn" href="cv.pdf" download data-key="btn-cv"></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="avatar"></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="fade-in">
+    <div class="container">
+      <h2 class="section-title" data-key="about-title"></h2>
+      <p class="section-desc" data-key="about-desc"></p>
+    </div>
+  </section>
+
+  <section id="skills" class="fade-in">
+    <div class="container">
+      <h2 class="section-title" data-key="skills-title"></h2>
+      <ul class="skills-list">
+        <li data-key="skill1"></li>
+        <li data-key="skill2"></li>
+        <li data-key="skill3"></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="services" class="fade-in">
+    <div class="container">
+      <h2 class="section-title" data-key="services-title"></h2>
+      <div class="services-grid">
+        <div class="service-card" data-key="service1"></div>
+        <div class="service-card" data-key="service2"></div>
+        <div class="service-card" data-key="service3"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> <span id="footer-name">Shehab Mohammed</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
